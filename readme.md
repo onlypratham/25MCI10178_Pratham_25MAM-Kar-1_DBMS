@@ -1,34 +1,10 @@
-CODE
-CREATE TABLE employee (
-    emp_id INT PRIMARY KEY,
-    emp_name VARCHAR(50),
-    manager_id INT,
-    department VARCHAR(50),
-    salary INT
-);
-select * from employee;
 
-INSERT INTO employee (emp_id, emp_name, manager_id, department, salary) VALUES
-(1, 'Amit', NULL, 'Management', 120000),
-(2, 'Ravi', 1, 'Engineering', 80000),
-(3, 'Neha', 1, 'Engineering', 82000),
-(4, 'Karan', 2, 'Engineering', 60000),
-(5, 'Simran', 2, 'Engineering', 62000),
-(6, 'Pooja', 3, 'Engineering', 61000),
-(7, 'Rahul', 3, 'Engineering', 64000),
-(8, 'Arjun', 1, 'HR', 70000);
+OUTPUT - Q1
+<img width="741" height="300" alt="image" src="https://github.com/user-attachments/assets/7187466f-3883-4697-8c1f-7ac36fb634b3" />
 
-select * from employee;
-
-SELECT 
-    e1.manager_id,
-    e1.emp_name AS employee_1,
-    e2.emp_name AS employee_2
-FROM employee e1
-JOIN employee e2
-    ON e1.manager_id = e2.manager_id
-    AND e1.emp_id < e2.emp_id
-WHERE e1.manager_id IS NOT NULL;
-
-OUTPUT
 <img width="590" height="230" alt="image" src="https://github.com/user-attachments/assets/d6aa565c-82e3-4adc-aace-1bcdd01fa27e" />
+
+
+OUTPUT - Q2
+
+<img width="742" height="87" alt="image" src="https://github.com/user-attachments/assets/1a85c6b9-0cfb-46a4-a73a-57abefd82bcf" />
