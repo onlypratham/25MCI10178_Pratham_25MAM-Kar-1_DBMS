@@ -28,3 +28,9 @@ JOIN employee e2
     ON e1.manager_id = e2.manager_id
     AND e1.emp_id < e2.emp_id
 WHERE e1.manager_id IS NOT NULL;
+
+
+SELECT *
+FROM Employee
+ORDER BY Salary DESC
+LIMIT 1 OFFSET 1;
